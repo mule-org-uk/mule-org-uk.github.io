@@ -1,7 +1,7 @@
 a { border-bottom: 1px dotted #33a; color: #33a; text-decoration: none; }
 body { background-color: #eee; color: #333; font: 14px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; line-height: 2.0em; padding: 10px 5% 0; }
 h2 { padding-top: 40px; }
-img { padding: 20px 0 20px 40px; }
+img { padding: 20px 0px; }
 table { border: 1px solid #fff; margin: 20px 0 20px 40px; }
 table thead { border-bottom: 1px dotted #fff; }
 table th { padding: 2px 20px; text-align: left; }
