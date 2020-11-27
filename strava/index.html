@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
+ <head>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="description" content="Sync Strava activities to Salesforce" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="Author" content="Chris Hughes" />
+  <meta name="viewport" content="width=1024" />
+  <style>
+  body {
+   background-color: #efefe0;
+   background-image: url(/images/strava-bg.jpg);
+   background-position: center top;
+   background-repeat: no-repeat;
+   font-family: "Helvetica", "Verdana", "Arial", sans-serif;
+   font-size: 16px;
+   min-height: 1000px;
+  }
+  h1, h2, p {
+   font-size: 16px;
+   font-weight: normal;
+  }
+  nav {
+   background-color: #efefe0;
+   color: #fc4c02;
+   display: block;
+   height: 100px;
+   line-height: 20px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+ }
+  nav div {
+   margin: 0 auto;
+   width: 850px;
+  }
+  section.signup {
+   background-color: #efefe0;
+   color: #fc4c02;
+   margin: 100px auto 0;
+   padding: 0 25px;
+   width: 500px;
+  }
+  label {
+    padding: 10px 0 0 0;
+  }
+  input[type=text] {
+    border-radius: 4px;
+    color: #fc4c02;
+    float: right;
+    width: 250px;
+  }
+  input[type=submit] {
+    border-radius: 4px;
+    color: #fff;
+    background-color: #fc4c02;
+    float: right;
+  }
+  br {
+    clear: both;
+  }
+  </style>
+  <title>Strava Sync</title>
+ </head>
+ <body class="hero">
+  <nav>
+   <img src="/images/strava.png" width="400" height="164" alt="Strava"/>
+  </nav>
+  <main>
+   <section class="signup">
+    <h1>Please enter your details below to sign-up</h1>
+    <form action="http://localhost:8081/signup" method="POST">
+     <label for="fname">First Name</label>
+     <input type="text" id="fname" name="fname"/>
+     <br/>
+     <label for="lname">Last Name</label>
+     <input type="text" id="lname" name="lname"/>
+     <br/>
+     <label for="email">Email Address</label>
+     <input type="text" id="email" name="email"/>
+     <br/>
+     <label for="stravaId">Strava Athlete #</label>
+     <input type="text" id="stravaId" name="stravaId"/>
+     <br/>
+     <input type="submit" value="Submit"/>
+    </form>
+   </section>
+  </main>
+ </body>
+</html>
